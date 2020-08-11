@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+   <h1>
+    Amount: <br>
+    </h1>
+    <input type="text" id="vd">
+
+</p>
+<p>
+    <h1> From Currency: <br></h1>
+    <select name="country" id="country">
+    <option value="VietNam" id="vnd">VietNam</option>
+    <option value="USA" id="usa">USA</option>
+    <option value="Korea" id="kra">Korea</option>
+    <option value="Japan" id="jp">Japan</option>
+
+</select>
+</p>
+
+
+<p>
+<h1>To <br></h1>
+<select name="country" id="country2" >
+    <option value="VietNam">VietNam</option>
+    <option value="USA">USA</option>
+    <option value="Korea">Korea</option>
+    <option value="Japan">Japan</option>
+
+</select>
+</p>
+<p><input type="button" id="convert" value="convert" onclick="convert()"></p>
+
+<p>Kết quả là: <span id="result"></span></p>
+<script>
+    function convert() {
+        let amount = document.getElementById('vd').value;
+        let currency = document.getElementById('country').value;
+        let toCurrency = document.getElementById('country2').value;
+
+
+        if (currency == "VietNam" && toCurrency == "USA") {
+            toCurrency = amount * 23000;
+            document.getElementById('result').innerText = toCurrency;
+            return;
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
