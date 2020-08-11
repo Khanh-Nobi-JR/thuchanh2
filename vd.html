@@ -45,11 +45,23 @@
 
 
         if (currency == "VietNam" && toCurrency == "USA") {
-            toCurrency = amount * 23000;
+            toCurrency = amount / 23000;
             document.getElementById('result').innerText = toCurrency;
             return;
         }
-
+         else if (currency == "VietNam" && toCurrency == "Korea") {
+            toCurrency = amount * 20000;
+            document.getElementById('result').innerText = toCurrency;
+            return;
+        }
+        else if (currency == "VietNam" && toCurrency == "Japan") {
+            toCurrency = amount * 218;
+            document.getElementById('result').innerText = toCurrency.toFixed(3);
+            return;
+        }
+        else {
+           document.getElementById('result').innerText = "chưa được học, sorry bạn nhé";
+        }
     }
 
 

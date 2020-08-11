@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<p>
+    <input type="number" id="a">
+    <input type="number" id="b">
+</p>
+
+    <input type="button" onclick="cal('+')"  value="Addition">
+    <input type="button" onclick="cal('-')" value="Subtraction(-)">
+    <input type="button" onclick="cal('*')" value="Multiplication(*)">
+    <input type="button" onclick="cal('/')" value="Division(/)">
+
+<p>kết quả là: <span id="result"><input type="text"id="kq"></span></p>
+<script>
+    function cal(op)
+    function cal(op){
+          let firstNum = Number(document.getElementById('a').value);
+          let secondNum = Number(document.getElementById('b').value);
+          let kq = 0;
+
+          switch (op){
+              case "+":
+                  kq = firstNum + secondNum;
+                  break;
+              case "-":
+                  kq = firstNum - secondNum;
+                  break;
+              case "*":
+                  kq = firstNum * secondNum;
+                  break;
+              case "/":
+                  kq = firstNum / secondNum;
+                  break;
+          }
+
+          document.getElementById('kq').value = kq;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4 hàm</title>
+</head>
+<body>
+<p>
+    <input type="text" id="a" placeholder="số thứ 1" >
+    <input type="text" id="b" placeholder="số thứ 2" >
+
+</p>
+<p>
+    <input type="button"id="add" value="+"  onclick="add()">
+    <input type="button"id="sub" value="-" onclick="sub()">
+    <input type="button"id="mul" value="*" onclick="mul()">
+    <input type="button"id="div" value="/" onclick="div">
+</p>
+<p>
+    <input type="text" id="kq">
+</p>
+<script>
+    function add() {
+        let firstNum = Number(document.getElementById('a').value);
+        let secondNum = Number(document.getElementById('b').value);
+        let calculator = document.getElementById('add').value;
+        let kq = firstNum + secondNum;
+        document.getElementById('kq').value = kq;
+    }
+    function sub() {
+        let firstNum = Number(document.getElementById('a').value);
+        let secondNum = Number(document.getElementById('b').value);
+        let calculator = document.getElementById('sub').value;
+        let kq = firstNum - secondNum;
+        document.getElementById('kq').value = kq;
+    }
+    function mul() {
+        let firstNum = Number(document.getElementById('a').value);
+        let secondNum = Number(document.getElementById('b').value);
+        let calculator = document.getElementById('mul').value;
+        let kq = firstNum * secondNum;
+        document.getElementById('kq').value = kq;
+    }
+    function div() {
+        let firstNum = Number(document.getElementById('a').value);
+        let secondNum = Number(document.getElementById('b').value);
+        let calculator = document.getElementById('div').value;
+        let kq = firstNum / secondNum;
+        document.getElementById('kq').value = kq;
+    }
+</script>
+</body>
+</html>
