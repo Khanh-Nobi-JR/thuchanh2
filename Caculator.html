@@ -15,28 +15,30 @@
     <input type="button" onclick="cal('*')" value="Multiplication(*)">
     <input type="button" onclick="cal('/')" value="Division(/)">
 
-<p>kết quả là: <span id="result"><input type="text"id="kq"></span></p>
+<p>kết quả là: <input type="text"id="kq"></p>
 <script>
-    function cal(op)
+    
     function cal(op){
           let firstNum = Number(document.getElementById('a').value);
           let secondNum = Number(document.getElementById('b').value);
+          let x = eval()
           let kq = 0;
 
-          switch (op){
-              case "+":
-                  kq = firstNum + secondNum;
-                  break;
-              case "-":
-                  kq = firstNum - secondNum;
-                  break;
-              case "*":
-                  kq = firstNum * secondNum;
-                  break;
-              case "/":
-                  kq = firstNum / secondNum;
-                  break;
-          }
+
+          // switch (op){
+          //     case "+":
+          //         kq = firstNum + secondNum;
+          //         break;
+          //     case "-":
+          //         kq = firstNum - secondNum;
+          //         break;
+          //     case "*":
+          //         kq = firstNum * secondNum;
+          //         break;
+          //     case "/":
+          //         kq = firstNum / secondNum;
+          //         break;
+          // }
 
           document.getElementById('kq').value = kq;
     }

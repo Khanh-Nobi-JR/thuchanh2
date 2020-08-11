@@ -15,10 +15,10 @@
 <p>
     <h1> From Currency: <br></h1>
     <select name="country" id="country">
-    <option value="VietNam" id="vnd">VietNam</option>
-    <option value="USA" id="usa">USA</option>
-    <option value="Korea" id="kra">Korea</option>
-    <option value="Japan" id="jp">Japan</option>
+    <option value="1" id="vnd">VietNam</option>
+    <option value="23000" id="usa">USA</option>
+    <option value="20" id="kra">Korea</option>
+    <option value="218" id="jp">Japan</option>
 
 </select>
 </p>
@@ -27,10 +27,10 @@
 <p>
 <h1>To <br></h1>
 <select name="country" id="country2" >
-    <option value="VietNam">VietNam</option>
-    <option value="USA">USA</option>
-    <option value="Korea">Korea</option>
-    <option value="Japan">Japan</option>
+    <option value="1">VietNam</option>
+    <option value="23000">USA</option>
+    <option value="20">Korea</option>
+    <option value="218">Japan</option>
 
 </select>
 </p>
@@ -42,27 +42,29 @@
         let amount = document.getElementById('vd').value;
         let currency = document.getElementById('country').value;
         let toCurrency = document.getElementById('country2').value;
-
-
-        if (currency == "VietNam" && toCurrency == "USA") {
-            toCurrency = amount / 23000;
-            document.getElementById('result').innerText = toCurrency;
-            return;
-        }
-         else if (currency == "VietNam" && toCurrency == "Korea") {
-            toCurrency = amount * 20000;
-            document.getElementById('result').innerText = toCurrency;
-            return;
-        }
-        else if (currency == "VietNam" && toCurrency == "Japan") {
-            toCurrency = amount * 218;
-            document.getElementById('result').innerText = toCurrency.toFixed(3);
-            return;
-        }
-        else {
-           document.getElementById('result').innerText = "chưa được học, sorry bạn nhé";
-        }
+        let result = amount * currency / toCurrency
+        document.getElementById('result').innerText = result;
     }
+
+    //     if (currency == "VietNam" && toCurrency == "USA") {
+    //         toCurrency = amount / 23000;
+    //         document.getElementById('result').innerText = toCurrency;
+    //         return;
+    //     }
+    //      else if (currency == "VietNam" && toCurrency == "Korea") {
+    //         toCurrency = amount * 20000;
+    //         document.getElementById('result').innerText = toCurrency;
+    //         return;
+    //     }
+    //     else if (currency == "VietNam" && toCurrency == "Japan") {
+    //         toCurrency = amount * 218;
+    //         document.getElementById('result').innerText = toCurrency.toFixed(3);
+    //         return;
+    //     }
+    //     else {
+    //        document.getElementById('result').innerText = "chưa được học, sorry bạn nhé";
+    //     }
+    // }
 
 
 </script>

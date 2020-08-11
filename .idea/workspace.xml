@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="415238e2-21db-4300-b341-33caf1f38cae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Caculator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/caculator4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Caculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/Caculator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vd.html" beforeDir="false" afterPath="$PROJECT_DIR$/vd.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +46,9 @@
       <workItem from="1597033489358" duration="16134000" />
       <workItem from="1597072022577" duration="2709000" />
       <workItem from="1597107993673" duration="2150000" />
-      <workItem from="1597110201954" duration="8745000" />
+      <workItem from="1597110201954" duration="11117000" />
+      <workItem from="1597124083785" duration="1204000" />
+      <workItem from="1597133441789" duration="1108000" />
     </task>
     <servers />
   </component>
